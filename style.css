@@ -1,0 +1,526 @@
+/* #region Fonts */
+@font-face {
+  font-family: "Eastman-Medium";
+  src: url("../Font/Eastman-Grotesque-Medium-trial.otf");
+}
+
+@font-face {
+  font-family: "Eastman-Bold";
+  src: url("../Font/Eastman-Grotesque-Black-trial.otf");
+}
+
+@font-face {
+  font-family: "Eastman-ExtraBold";
+  src: url("../Font/Eastman-Grotesque-ExtraBold-trial.otf");
+}
+
+
+.Eastman-Medium {
+  font-family: "Eastman-Medium", sans-serif ;
+}
+
+.Eastman-Bold {
+  font-family: "Eastman-Bold";
+}
+
+.Eastman-ExtraBold {
+  font-family: "Eastman-ExtraBold";
+}
+
+.Arial {
+  font-family: Arial, sans-serif;
+}
+/* #endregion */
+
+/* #region Nav Section */
+nav {
+  background: white;
+  font-family: "Eastman-Medium", sans-serif;
+}
+section {
+  background: #c3d5df;
+}
+body::before {
+  display: block;
+  content: "";
+  height: 80px;
+}
+/* #endregion */
+
+/* #region Hero Section */
+.landing-avatar {
+  max-height: 400px;
+}
+.tagline{
+  font-weight: 700;
+  margin-top: 0px;
+}
+.CTA{
+  border-radius: 30px;
+  border: 4px solid black;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.CTA:hover{
+  background-color: black;
+  color: white;
+}
+
+.BookACall{
+  padding: 5px 20px;
+  background-color: #dcf247;
+  margin-right: 8px;
+}
+
+.Resume{
+  padding: 5px 30px;
+  background-color: white;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.cta-container {
+  position: absolute;
+  top: 86%; /* Positions 80% from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensures buttons appear above the image */
+}
+
+.impact{
+  border: 5px solid #dcf247;
+  background-color: #dcf247;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+/* #endregion */
+
+/* #region Skills Section */
+.card {
+  border: 0px solid black;
+  border-radius: 17px;
+  background-color: #f4f4f4;
+  font-family: "Eastman-Medium";
+  font-weight: 500;
+}
+
+.skillsCard {
+  min-height: 300px;
+}
+
+.skills-title {
+  font-size: 25px;
+  background-color: #dcf247; /* Light green color */
+  display: inline-block; /* Makes the background only as wide as the text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight:600;
+}
+
+/* #endregion */
+
+/* #region Projects Section */
+.project-title{
+  font-size: 35px;
+}
+.first-project{
+  margin-top: 100px;
+}
+
+.projects{
+  margin-top: 150px;
+}
+.project-logo{
+  width: 60%;
+  margin-bottom: 50px;
+}
+.project-des {
+  margin-bottom: 10px;
+  color: grey;
+  font-size: 18px;
+}
+
+.More-Details-Button {
+  border-radius: 30px;
+  border: 4px solid black;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+.video-border {
+  border-radius: 20px; /* Adjust this value to increase or decrease the roundness */
+  overflow: hidden; /* This ensures the video content doesn't spill outside the rounded corners */
+}
+
+/* #endregion */
+
+/* #region Free Consultation Section */
+.bg-lime {
+  background-color: #dcf247;
+}
+
+.consultation {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Two columns: text and button in the first, image in the second */
+  align-items: center;
+  padding: 20px; /* Adjust padding as needed */
+  position: relative;
+}
+
+.consultation-button {
+  border-radius: 40px;
+  border: 4px solid black;
+  font-size: 30px;
+  font-weight: 750;
+  padding: 7px 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.consultation-button:hover{
+  transform: scale(1.1);
+}
+
+.consultation .container {
+  display: grid;
+  grid-template-columns: 1fr auto; /* Two columns: text and button in the first, image in the second */
+  align-items: center;
+  gap: 20px; /* Adjust gap between columns as needed */
+}
+
+.consultation h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0; /* Remove default margin */
+}
+
+.consultation-arrow {
+  position: absolute;
+  right: 55%; /* Adjust as needed */
+  top: 42%; /* Adjust as needed */
+  height: 120px;
+  z-index: 1; /* Ensures the arrow is above other elements */
+  transform: rotate(-15deg);
+}
+
+.idea-icon {
+  height: 400px;
+  justify-self: end; /* Align the image to the right */
+}
+/* #endregion */
+
+/* #region Testimonial Section */
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .title {
+  font-size: 35px;;
+  font-weight: 600px;
+  text-transform: capitalize;
+  color: black;
+  line-height: 1.2;
+}
+
+.testimonials {
+  padding: 100px 0px;
+}
+
+.testimonials-item {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 30px;
+  min-height: 255px;
+  font-family: 'Eastman-Medium';
+}
+
+.testimonials-item .info{
+  display: flex;
+  align-items: center;
+}
+.testimonials-item img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2;
+}
+
+.testimonials-item .job {
+  text-transform: capitalize;
+  color: black;
+}
+
+.testimonials-item p {
+  margin-top: 20px;
+  color: grey;
+}
+
+.testimonials .swiper-pagination{
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: black;
+}
+/* #endregion */
+
+/* #region Contact Me Section */
+#ContactMe {
+  position: relative;
+  overflow: hidden; /* This ensures the arrow doesn't create scrollbars */
+}
+
+.mb-100{
+  margin-bottom: 100px;
+}
+.collaborate{
+  font-weight: 700;
+  font-size: 70px;
+  margin-top:100px;
+}
+.email-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 80px; /* Adjust as needed */
+}
+.email{
+  background-color: #dcf247; /* Light green color */
+  display: inline-block; /* Makes the background only as wide as the text */
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 80px;
+  font-weight: 700;
+}
+/* #endregion */
+
+/* #region Media Queries */
+@media (max-width: 1000px) {
+  .pacifico {
+    font-size: 50px; /* Font size for smaller screens */
+  }
+
+  /*Experience Section & Education*/
+  .resume-entry {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-entry img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .resume-entry .resume-content {
+    flex: 1;
+  }
+
+  .idea-icon {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .consultation-button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 20px;
+  }
+
+  .collaborate{
+    font-weight: 900;
+    font-size: 50px;
+    margin-top:100px;
+  }
+  .email{
+    background-color: #dcf247; /* Light green color */
+    display: inline-block; /* Makes the background only as wide as the text */
+    padding: 5px 10px;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 767px) {
+  .consultation {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .consultation .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .consultation .col-md-6:nth-child(2) {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .consultation .col-md-6:nth-child(1) {
+    order: 2;
+  }
+
+  .consultation .idea-icon {
+    height: 200px;
+    width: auto;
+  }
+
+  .consultation h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .consultation-button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 20px;
+  }
+
+  .collaborate{
+    font-weight: 900;
+    font-size: 30px;
+    margin-top:100px;
+  }
+  .email{
+    background-color: #dcf247; /* Light green color */
+    display: inline-block; /* Makes the background only as wide as the text */
+    padding: 5px 10px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .pacifico {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .aboutMe {
+    font-size: 15px;
+  }
+
+  .apps { 
+    padding-top: 0px;
+  }
+
+  .tech-stack-title {
+    font-size: 8px; /* Adjust as needed */
+  }
+
+  .tech-stack-image {
+    width: 100%; /* Increased width for mobile screens */
+  }
+
+  .tech-stack-body {
+    padding: 5px;
+    padding-bottom: 1px;
+    padding-top: 10px;
+  }
+
+  .tech-stack-body img {
+    width: 70%;
+  }
+
+  .tech-stack-firebase-image {
+    width: 77%;
+  }
+
+  .skills-title {
+    font-size: 20px;
+    background-color: #dcf247; /* Light green color */
+    display: inline-block; /* Makes the background only as wide as the text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight:500;
+  }
+
+  .skills-text {
+    font-size: 15px;
+  }
+
+  /*Download CV Button */
+  .download-icon {
+    height: 15px;
+    margin-left: 5px;
+    padding-bottom: 4px;
+  }
+
+  .linkedIn-icon {
+    height: 29px;
+    margin-left: 3px;
+  }
+
+  .download-cv-btn {
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 2px solid black;
+  }
+
+  /* Projects Section */
+.first-project{
+  margin-top: 50px;
+}
+
+.projects{
+  margin-top: 50px;
+}
+
+.project-tech-stack {
+  width: 18%;
+  margin-bottom: 10px;
+}
+
+.project-logo{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-des {
+  margin-bottom: 20px;
+  color: grey;
+}
+
+/*Experience Section & Education */
+
+.resume-entry {
+  padding: 15px;
+}
+
+.resume-entry .title {
+  font-size: 1em;
+}
+
+.resume-entry .date {
+  font-size: 0.8em;
+}
+
+.resume-entry .description {
+  font-size: 0.7em;
+}
+
+}
+
+/* #endregion */
