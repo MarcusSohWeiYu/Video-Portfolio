@@ -1,0 +1,49 @@
+.youth-leaders-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .video-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+  }
+  
+  .responsive-video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .content-section h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .content-section p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+    
+    .content-section h2 {
+      font-size: 18px;
+    }
+    
+    .content-section p {
+      font-size: 14px;
+    }
+  }
