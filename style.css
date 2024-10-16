@@ -39,13 +39,14 @@ nav {
 }
 section {
   background: #c3d5df;
+  text-decoration: none;
+  color: black;
 }
 body::before {
   display: block;
   content: "";
   height: 80px;
-  text-decoration: none;
-  color: black;
+
 }
 /* #endregion */
 
