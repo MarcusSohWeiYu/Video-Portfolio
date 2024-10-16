@@ -48,6 +48,14 @@ body::before {
   height: 80px;
 
 }
+
+a {
+  color: black; /* Set default link color */
+}
+
+button {
+  color: black; /* Ensure button text color is black */
+}
 /* #endregion */
 
 /* #region Hero Section */
