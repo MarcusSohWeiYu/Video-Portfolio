@@ -51,6 +51,7 @@ body::before {
 
 a {
   color: black; /* Set default link color */
+  text-decoration: none;
 }
 
 button {
